@@ -28,7 +28,7 @@ public class GuessNumber : MonoBehaviour
 
         if (int.TryParse(numberInput.text, out int playerNumber))
         {
-            if (playerNumber > randomNumber)
+            if (playerNumber == randomNumber)
             {
                 messageText.text = "Finally, thought you would never find it";
             }
